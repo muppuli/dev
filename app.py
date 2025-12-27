@@ -12,7 +12,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
-df = pd.read_csv("/workspaces/dev/qa_data (1).csv")
+df = pd.read_csv("qa_data (1).csv")
 
 context_text = ""
 for _, row in df.iterrows():
